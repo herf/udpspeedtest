@@ -1,7 +1,13 @@
 # UDP-SpeedTest
 a way to test wifi speed without a server
 
-I thought it would be cool to send UDP packets to my gateway and see where they got stuck. The .py is all Claude Opus, but I am writing the README, yay.
+I thought it would be cool to send UDP packets to my gateway (discard port) and see where they got stuck. The Python code is all Claude Opus, but I am writing the README, yay.
+
+Of course to run it you just do:
+
+`
+python udp_speedtest.py
+`
 
 What's interesting is:
 - Windows and Linux seem to get high-quality flow control at send time, so they send at "line rate" (WiFi or wired), making this a good test for your current interface speed
